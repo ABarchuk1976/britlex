@@ -1,7 +1,7 @@
 :root {
   --container-width: 1338px;
-  --default-padding-left: 16px;
-  --default-padding-right: 16px;
+  --default-padding-left: 0px;
+  --default-padding-right: 0px;
   --header-menu-margin-left: 50px;
   --footer-menu-margin-left: 80px;
   --hed-foot-padding-top-bottom: 55px;
@@ -67,7 +67,6 @@ a {
 }
 
 .container {
-  display: flex;
   width: var(--container-width);
   padding-left: var(--default-padding-left);
   padding-right: var(--default-padding-right);
@@ -81,10 +80,12 @@ a {
 }
 
 .header .container {
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 .footer .container {
+  display: flex;
   justify-content: space-between;
   align-items: center;
 }
@@ -127,9 +128,9 @@ a {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
-  /* line-height: 1.5; */
+  line-height: inherit;
   text-align: center;
-  /* letter-spacing: 0.03em; */
+  letter-spacing: 0.03em;
   color: var(--button-lets-talk-color);
 
   width: 312px;
@@ -167,6 +168,116 @@ a {
 .footer-menu-link:hover,
 .footer-menu-link:focus {
   color: var(--header-menu-color);
+}
+
+/* index.html */
+.hero-section .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.hero-left-part {
+  width: 540px;
+}
+
+.hero-title {
+  display: inline-block;
+  width: 386px;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 1.25;
+  color: var(--h1-h2-color);
+  margin-bottom: 40px;
+}
+
+.hero-text {
+  font-size: 24px;
+  counter-reset: var(--p-color);
+  margin-bottom: 60px;
+}
+
+.hero-button {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.5;
+  color: var(--button-color);
+  background-color: var(--button-bg);
+  width: 426px;
+  height: 100px;
+  border: 2px solid var(--button-bg);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--logo-accent);
+  color: var(--button-bg);
+}
+
+.skills-title {
+  font-weight: 600;
+  font-size: 48px;
+  color: var(--h1-h2-color);
+}
+
+.skills-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skills-item {
+  width: 426px;
+  padding-top: 32px;
+  padding-left: 18px;
+  padding-right: 18px;
+  background-color: var(--skils-bg);
+}
+
+.skills-item-img {
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.skills-item-title {
+  font-weight: 600;
+  font-size: 30px;
+  color: var(--h3-color);
+  margin-bottom: 20px;
+}
+
+.skills-item-text {
+  font-size: 16px;
+  color: var(--p-color);
+  margin-bottom: 30px;
+}
+
+.skills-detail {
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--button-color);
+  background-color: var(--button-bg);
+  max-width: 218px;
+  min-height: 60px;
+  border: 2px solid var(--button-bg);
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.skills-top-right {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 30px;
+}
+
+.skills-bottom-right {
+  margin-top: 30px;
+  width: 882px;
+  padding-top: 32px;
+  padding-left: 18px;
+  padding-right: 18px;
+  background-color: var(--skils-bg);
 }
 
 /* After all styles */
