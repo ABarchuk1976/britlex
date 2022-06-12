@@ -149,6 +149,13 @@ summary {
 
   background-color: inherit;
   margin-left: auto;
+  cursor: pointer;
+}
+
+.header-button:hover,
+.header-button:focus {
+  background-color: var(--button-lets-talk-border);
+  color: var(--button-color);
 }
 
 .footer-logo {
