@@ -25,6 +25,11 @@
   --price-per-month-color: #546269;
   --input-color: #8f95a5;
   --footer-menu-color: #8f95a5;
+
+  --skills-speaking-text-width: 347px;
+  --skills-writing-text-width: 340px;
+  --skills-reading-text-width: 359px;
+  --skills-listening-text-width: 324px;
 }
 
 body {
@@ -60,6 +65,10 @@ img {
 
 a {
   text-decoration: none;
+}
+
+summary {
+  list-style: none;
 }
 
 .section {
@@ -228,14 +237,13 @@ a {
 
 .skills-item {
   width: 426px;
-  padding-top: 32px;
-  padding-left: 18px;
-  padding-right: 18px;
+  padding: 32px 18px;
   background-color: var(--skils-bg);
+  border-radius: 10px;
 }
 
 .skills-item-img {
-  justify-content: center;
+  text-align: center;
   margin-bottom: 24px;
 }
 
@@ -247,31 +255,66 @@ a {
 }
 
 .skills-item-text {
+  display: inline-block;
   font-size: 16px;
   color: var(--p-color);
   margin-bottom: 30px;
 }
 
+.skills-speaking-text-width {
+  width: var(--skills-speaking-text-width);
+}
+
+.skills-writing-text-width {
+  width: var(--skills-writing-text-width);
+}
+
+.skills-reading-text-width {
+  width: var(--skills-reading-text-width);
+}
+
+.skills-listening-text-width {
+  width: var(--skills-listening-text-width);
+}
+
 .skills-detail {
+  text-align: center;
   font-weight: 500;
-  font-size: 18px;
-  color: var(--button-color);
   background-color: var(--button-bg);
   max-width: 218px;
-  min-height: 60px;
+  height: 60px;
   border: 2px solid var(--button-bg);
   border-radius: 10px;
   cursor: pointer;
-  text-align: center;
+}
+
+.skills-detail-summary {
+  font-size: 18px;
+  color: var(--button-color);
+  padding-top: 17px;
+}
+
+.skills-detail-text {
+  text-align: left;
+  margin-left: auto;
+  width: 360px;
+  font-size: 16px;
+  color: var(--p-color);
+  background-color: var(--page-bg);
+  padding: 5px;
+  border: 1px solid var(--button-bg);
+  border-radius: 10px;
+  margin-top: 30px;
 }
 
 .skills-top-right {
   display: flex;
   justify-content: space-between;
-  margin-left: 30px;
 }
 
 .skills-bottom-right {
+  display: flex;
+  justify-content: space-between;
   margin-top: 30px;
   width: 882px;
   padding-top: 32px;
