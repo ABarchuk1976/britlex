@@ -235,6 +235,8 @@ summary {
   font-weight: 600;
   font-size: 48px;
   color: var(--h1-h2-color);
+  text-align: center;
+  margin-bottom: 60px;
 }
 
 .skills-list {
@@ -336,6 +338,36 @@ summary {
 }
 
 .about-left {
+  width: 652px;
+}
+
+.about-title {
+  font-weight: 600;
+  font-size: 48px;
+  color: var(--h1-h2-color);
+  margin-bottom: 60px;
+}
+
+.about-text {
+  margin-block-end: 30px;
+}
+
+.about-counter-list {
+  display: flex;
+  width: 554px;
+  justify-content: space-between;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.counter-item-title {
+  font-weight: 600;
+  font-size: 48px;
+  color: var(--about-us-counter);
+}
+
+.counter-item-text {
+  text-align: center;
 }
 
 /* After all styles */
