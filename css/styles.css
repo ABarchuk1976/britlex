@@ -330,6 +330,14 @@ summary {
   background-color: var(--skils-bg);
 }
 
+.about .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-left {
+}
+
 /* After all styles */
 .accent {
   color: var(--logo-accent);
