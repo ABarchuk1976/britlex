@@ -159,7 +159,6 @@ input[type='text'] {
 
 .header-button {
   font-family: inherit;
-  font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: inherit;
@@ -168,11 +167,11 @@ input[type='text'] {
   color: var(--button-lets-talk-color);
 
   width: 312px;
-  height: 70px;
+  padding: 20px 56px;
   border: 2px solid var(--button-lets-talk-border);
   border-radius: 10px;
 
-  background-color: inherit;
+  background-color: transparent;
   margin-left: auto;
   cursor: pointer;
 }
@@ -243,19 +242,17 @@ input[type='text'] {
   margin-bottom: 60px;
 }
 
-.hero-button-name-width {
-  display: inline-block;
-  width: 298px;
-  font-size: 36px;
-  line-height: 1.5;
-}
 .hero-button {
   color: var(--button-color);
   background-color: var(--button-bg);
   border: 2px solid var(--button-bg);
   border-radius: 10px;
   cursor: pointer;
+  width: 426px;
   padding: 23px 64px;
+  font-family: inherit;
+  font-size: 36px;
+  line-height: inherit;
 }
 
 /* .hero-button:hover,
@@ -448,26 +445,24 @@ input[type='text'] {
   display: inline-block;
   text-align: center;
 
-  border: 2px solid var(--button-bg);
+  border: none;
   border-radius: 10px;
 
   background-color: var(--button-bg);
   cursor: pointer;
 
+  width: 312px;
   padding: 20px 56px;
   margin-left: var(--grid-gap);
-}
 
-.submit-button-name {
-  display: block;
-  width: 200px;
   font-family: inherit;
-  font-size: 20px;
+  font-style: 20px;
   font-weight: 500;
   letter-spacing: 0.03em;
-  line-height: 1.5;
+  line-height: inherit;
   color: var(--button-color);
 }
+
 /* After all styles */
 .accent {
   color: var(--logo-accent);
